@@ -1,0 +1,203 @@
+
+
+.news-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 93%;
+    height:auto;
+
+
+
+ }
+
+ body {
+    font-family: Arial, sans-serif;
+  }
+
+  h1{
+    color: #333;
+    text-align: center;
+    margin-top: 15px;
+  }
+  h2 {
+    
+    text-align: center;
+    
+  }
+
+
+ .button-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.button-container button {
+    background-color: #171717;
+    border: 2px solid ;
+    border-radius: 20px;
+    background-color: transparent;
+    color: #212222;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    padding: 8px 16px;
+    transition: background-color 0.15s ease;
+    cursor: pointer;
+}
+
+.button-container button.dark {
+    background-color: #171717;
+    color: #ffffff;
+}
+
+.button-container button:hover:not(.dark) {
+    background-color:#4a4848;
+    color: #ffffff;
+}
+
+ul.news-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  ul.news-list li {
+    position: relative;
+    margin-bottom: 20px;
+    padding-left: 30px;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+  ul.news-list li:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+    background-color: #FF4081;
+    border-radius: 50%;
+  }
+  
+  ul.news-list li:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 6px;
+    transform: translateY(-50%);
+    width: 2px;
+    height: 100%;
+    background-color: #FF4081;
+  }
+
+  button.download-button {
+    background-color: #000;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    -webkit-animation: bounce 1s infinite;
+    animation: bounce 1s infinite;
+    display: block;
+    margin: 0 auto;
+    margin-top: 15px;
+   
+  }
+  
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+  
+    50% {
+      transform: translateY(-10px);
+    }
+  
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes blast {
+    0% {
+      transform: scale(1);
+    }
+  
+    50% {
+      transform: scale(1.1);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  button.download-button:hover {
+    animation: bounce 1s infinite;
+    animation-delay: 0.5s;
+  }
+  
+  button.download-button:active {
+    animation: blast 0.5s;
+  }
+
+  .image-credits {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-align: right;
+    font-size: 17px;
+    margin: 5px;
+    color: #ded1d1;
+}
+
+ /* Style for the AutoFeed section */
+ .autofeed {
+  text-align: center;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* Animation effect */
+@keyframes slideIn {
+  0% {
+      opacity: 0;
+      transform: translateY(-50px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Style for the contact links */
+.contact-links {
+  margin-top: 20px;
+}
+
+.contact-links a {
+  margin: 5px;
+  color: #333;
+  text-decoration: none;
+}
+
+.contact-links a:hover {
+  text-decoration: underline;
+}
+#auto{
+  text-decoration: none;
+  color: inherit;
+  /* Optionally, you can set other link properties like cursor, outline, etc. */
+}
